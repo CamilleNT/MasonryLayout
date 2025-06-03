@@ -1,0 +1,45 @@
+/* Masonry Layout Project 5/30/2025 */
+
+body {
+	background-color: rgb(164, 213, 144);
+}
+
+main {
+	max-width: 95%;
+	border: 2px black solid;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	text-shadow: rgb(39, 71, 27) 2px 1px 4px;
+	font-size: 2em;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+section#gallery {
+	column-count: 3;
+	column-gap: 22px;
+}
+
+div.item {
+	margin-bottom: 10px;
+}
+
+/* Media query for tablet or smaller screens */
+
+@media only screen and (max-width: 760px) {
+	section#gallery {
+		column-count: 2;
+		column-gap: 12px;
+	}
+}
+
